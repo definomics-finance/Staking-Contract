@@ -325,7 +325,7 @@ contract DefiNomicsStaking is Ownable {
     
     event RewardsTransferred(address holder, uint amount);
     
-    address public constant tokenAddress = 0xeC2340a1AC3104492a45F61640B458764b0BF576;
+    address public constant tokenAddress = 0xCb52860ADB0556999B13DdF58967A881D1Aa1C10;
     
     uint public constant rewardRate = 12800;
     uint public constant rewardInterval = 365 days;
@@ -447,7 +447,7 @@ contract DefiNomicsStaking is Ownable {
     }
     
     
-    uint private constant stakingAndDaoTokens = 16212e18;
+    uint private constant stakingAndDaoTokens = 13768e18;
     
     function getStakingAndDaoAmount() public view returns (uint) {
         if (totalClaimedRewards >= stakingAndDaoTokens) {
